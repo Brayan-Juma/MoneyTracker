@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/pastel_bg"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:text="Nueva Transacción"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_text_dark"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <!-- TARJETA PRINCIPAL -->
+        <LinearLayout
+            android:background="@drawable/card_bg"
+            android:elevation="8dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Tipo -->
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Categoría -->
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Monto -->
+            <EditText
+                android:id="@+id/inputAmount"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:background="@null"
+                android:padding="10dp"
+                android:textColor="@color/pastel_text_dark"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Botón de conversión -->
+            <Button
+                android:id="@+id/btnConvert"
+                android:text="Convertir moneda"
+                android:textColor="@color/pastel_card"
+                android:backgroundTint="@color/pastel_blue"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- Fecha -->
+            <EditText
+                android:id="@+id/inputDate"
+                android:hint="Fecha (YYYY-MM-DD)"
+                android:background="@null"
+                android:padding="10dp"
+                android:textColor="@color/pastel_text_dark"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Método de pago -->
+            <EditText
+                android:id="@+id/inputPayment"
+                android:hint="Método de pago (efectivo, tarjeta...)"
+                android:background="@null"
+                android:padding="10dp"
+                android:textColor="@color/pastel_text_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- BOTÓN GUARDAR -->
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Guardar"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_card"
+            android:backgroundTint="@color/pastel_green"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

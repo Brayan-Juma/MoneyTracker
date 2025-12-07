@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/pastel_bg"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transacciones"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/pastel_text_dark"
+        android:layout_marginBottom="20dp" />
+
+
+    <!-- ⭐⭐⭐ AQUI SE AGREGA EL BLOQUE DE FILTROS (SIN BORRAR NADA) ⭐⭐⭐ -->
+    <LinearLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnAll"
+            android:text="Todos"
+            android:backgroundTint="@color/pastel_blue"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/filter_button_bg" />
+
+        <Button
+            android:id="@+id/btnIncome"
+            android:text="Ingresos"
+            android:backgroundTint="@color/pastel_green"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/filter_button_bg" />
+
+        <Button
+            android:id="@+id/btnExpense"
+            android:text="Gastos"
+            android:backgroundTint="@color/pastel_pink"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/filter_button_bg" />
+
+    </LinearLayout>
+    <!-- ⭐⭐⭐ FIN DEL BLOQUE DE FILTROS ⭐⭐⭐ -->
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

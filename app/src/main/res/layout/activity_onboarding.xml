@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/pastel_bg"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título -->
+        <TextView
+            android:text="Bienvenido"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_text_dark"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Configura tu MoneyTracker"
+            android:textSize="16sp"
+            android:textColor="@color/pastel_text_light"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- TARJETA -->
+        <LinearLayout
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp">
+
+            <EditText
+                android:id="@+id/inputName"
+                android:hint="Tu nombre"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/pastel_text_dark"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/inputBudget"
+                android:hint="Presupuesto mensual"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/pastel_text_dark"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/inputCurrency"
+                android:hint="Moneda (USD, EUR...)"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/pastel_text_dark"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/inputStartDay"
+                android:hint="Día de inicio del mes (1-28)"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:textColor="@color/pastel_text_dark"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- BOTÓN -->
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Guardar y continuar"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/pastel_blue"
+            android:textColor="@color/pastel_card"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

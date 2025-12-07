@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pastel_bg">#F8F9FE</color>        <!-- Fondo gris-azulado pastel -->
+    <color name="pastel_card">#FFFFFF</color>      <!-- Tarjetas blancas -->
+    <color name="pastel_blue">#A3C9F9</color>      <!-- Azul pastel -->
+    <color name="pastel_pink">#F7C8E0</color>      <!-- Rosa pastel -->
+    <color name="pastel_green">#B8E0D2</color>     <!-- Verde pastel suave -->
+    <color name="pastel_text_dark">#2A2A2A</color>
+    <color name="pastel_text_light">#6A6A6A</color>
+</resources>

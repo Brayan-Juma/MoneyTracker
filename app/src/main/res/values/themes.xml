@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base (no tocar mucho aquí) -->
+    <style name="Base.Theme.MoneyTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Fondo global -->
+        <item name="android:windowBackground">@color/pastel_bg</item>
+
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/pastel_blue</item>
+        <item name="colorSecondary">@color/pastel_pink</item>
+
+        <!-- Barra de estado -->
+        <item name="android:statusBarColor">@color/pastel_blue</item>
+
+        <!-- Componentes redondeados -->
+        <item name="shapeAppearanceSmallComponent">@style/RoundedShape</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedShape</item>
+    </style>
+
+    <!-- Tema usado por la app -->
+    <style name="Theme.MoneyTracker" parent="Base.Theme.MoneyTracker" />
+
+    <!-- Estilo global para esquinas redondeadas -->
+    <style name="RoundedShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Theme.MoneyTracker.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/pastel_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_pastel</item>
+        <item name="postSplashScreenTheme">@style/Theme.MoneyTracker</item>
+    </style>
+
+
+
+</resources>

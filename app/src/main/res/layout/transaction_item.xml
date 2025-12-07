@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/card_bg"
+    android:padding="15dp"
+    android:elevation="6dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Icono -->
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/card_bg"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Información -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:text="Categoría"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:text="Descripción"
+            android:textColor="@color/pastel_text_light"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Monto -->
+    <TextView
+        android:id="@+id/txtAmount"
+        android:text="$0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/pastel_text_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

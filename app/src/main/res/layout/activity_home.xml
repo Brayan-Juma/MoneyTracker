@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel_bg"
+    >
+
+    <!-- CONTENEDOR DONDE CARGAN LOS FRAGMENTS -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- BOTTOM NAV -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemIconTint="@color/pastel_blue"
+        app:itemTextColor="@color/pastel_text_dark"
+        android:background="@color/pastel_card" />
+
+</LinearLayout>
